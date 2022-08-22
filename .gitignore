@@ -5,8 +5,8 @@
 # testing
 /coverage
 
-# production
-/dist
+## production
+#/dist
 
 # misc
 .vscode
