@@ -111,6 +111,10 @@ export class ActionCable {
 
   private handleMessage(data: any) {
     const sub = this.subscriptions[data.identifier];
+    if (!sub) {
+      return;
+    }
+
     const type = data.type as MessageType;
 
     switch (type) {
